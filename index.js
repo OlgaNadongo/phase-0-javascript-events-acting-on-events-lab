@@ -31,18 +31,17 @@ function moveDodgerLeft() {
 
 // Your code here
 
-function moveDodgerRight() {
-    const leftNumbers = dodger.style.left.replace("px", "");
-    const left = parseInt(leftNumbers, 10);
+ function moveDodgerRight() {
+     const leftNumbers = dodger.style.left.replace("px", "");
+     const left = parseInt(leftNumbers, 10);
   
-    if (left > 170) {
+     if (left > 170) {
       dodger.style.left = `${left + 1}px`;
-    }
+     }
   }
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "ArrowRight") {
+   document.addEventListener("keydown", function (e) {
+     if (e.key === "ArrowRight") {
       moveDodgerRight();
     }
     
-});
-
+ });
